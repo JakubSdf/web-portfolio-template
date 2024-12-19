@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #121212; /* Dark background color */
+    color: #ccc; /* Light gray text color */
+    font-family: 'Anonymous Pro', monospace; /* Use the 'Anonymous Pro' font */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+}
+
+/* Container */
+.container {
+    text-align: center; /* Center text within the container */
+    padding: 2rem; /* Add padding around the content */
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    color: #ffffff; /* White color for the heading */
+    margin-bottom: 50px; /* Add space below the heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Medium font size for paragraph */
+    margin-top: 30px; /* Add space above the paragraph */
+}
+
+.name {
+    color: #3aafa9; /* Highlight name with a specific color */
+}
+
+.highlight {
+    color: #3aafa9; /* Highlight links and words with the same color */
+}
+
+/* Remove underline on links */
+a {
+    text-decoration: none; /* Remove default underline on links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+}
+
+/* Hover effect on links */
+a:hover {
+    color: #2b7a78; /* Change color when hovering over links */
+    transform: scale(1.1); /* Slightly scale up the link */
+}
+
+h2 {
+    margin-top: 60px; /* Add space at the top for the heading */
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex; /* Use flexbox for the social icons */
+    gap: 40px; /* Space between each social icon */
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px; /* Add space above the social icons */
+}
+
+.social-icons a svg {
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition for the icons */
+    width: 32px; /* Set icon width */
+    height: 32px; /* Set icon height */
+    color: #3aafa9; /* Set initial icon color */
+}
+
+.social-icons a svg:hover {
+    transform: scale(1.2); /* Scale up the icons on hover */
+    color: #2b7a78; /* Change icon color on hover */
+}
+
+/* Fun Text Styling */
+.fun-text {
+    display: inline-block; /* Make the fun-text inline-block for easy styling */
+    text-decoration: none; /* Remove underline */
+    color: #3aafa9; /* Initial color of fun-text */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.fun-text:hover {
+    color: #f22952; /* Change color when hovering */
+    margin-left: 13px; /* Add space on the left when hovered */
+}
+
+/* Add custom content when hovering fun-text */
+.fun-text:hover::after {
+    margin-left: 10px; /* Space after the fun-text */
+    content: "(trust me)"; /* Add custom text */
+    color: #f47fff; /* Set color of the custom text */
+    font-weight: bold; /* Make the custom text bold */
+}
